@@ -1,11 +1,12 @@
 package cn.buptleida.nettyTest;
 
+import cn.buptleida.netty.SolvechannelRead;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 
-public class ServerHandler  extends ChannelHandlerAdapter {
+public class ServerHandler  extends ChannelHandlerAdapter implements SolvechannelRead {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {

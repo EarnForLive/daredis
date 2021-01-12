@@ -11,7 +11,7 @@ import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
-public class ServerHandler extends ChannelHandlerAdapter {
+public class ServerHandler extends ChannelHandlerAdapter implements SolvechannelRead{
 
     public static ChannelGroup channels = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
     private RedisClient client;
